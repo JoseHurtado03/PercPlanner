@@ -1,0 +1,161 @@
+.body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.mainTitle{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.box{
+    width: 380px;
+    height: 340px;
+    border-radius: 30px;
+    background: rgba(152, 151, 208, 0.58);
+    box-shadow: 20px 20px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    padding: 50px 30px 50px 50px;
+}
+
+.input{
+    width: 350px;
+    height: 60px;
+    border-radius: 10px;
+    background: #D9D9D9;
+
+    color: #000000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-left: 10px;
+}
+
+.button{
+    width: 170px;
+    height: 60px;
+    border-radius: 20px;
+    background: #D9D9D9;
+    color: #000;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 10px;
+    border-radius: 10px;
+    background: #96FFCD;
+    box-shadow: 10px 10px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.mainImg{
+    width: 50%;
+    height: 729px;
+    background-image: url('/mainImg.png');
+    background-size: cover;
+}
+
+.leftSpace{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding-left: 7%;
+    padding-bottom: 5%;
+    
+}
+
+.buttonsSpace{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.googleIcon {
+    width: 30px; /* Ajusta el tamaño de la imagen para que se vea bien */
+    height: 30px;
+    margin-right: 10px;
+  }
+
+.googleB{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 290px;
+    height: 73.816px;
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 100px;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
+@media (min-width: 360px) and (max-width: 800px){
+    .body{
+        flex-direction: column;
+        margin-top: 80px;
+    }
+
+    .leftSpace{
+        padding-left: 0;
+    }
+
+    .mainTitle{
+        font-size: 25px;
+    }
+
+    .box{
+        width: 65%;
+        height: 210px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-bottom: 30px;
+        border-radius: 15px;
+    }
+
+    .input{
+        width: 95%;
+        height: 40px;
+        border-radius: 8px;
+        font-size: 15px;
+        margin-bottom: 10px;
+    }
+
+    .button{
+        width: 100%;
+        height: 45px;
+        font-size: 18px;
+    }
+
+    .googleB{
+        width: 80%;
+        height: 45px;
+        font-size: 15px;
+        margin: 0 auto;
+    }
+
+    .mainImg{
+        display: none;
+    }
+}
