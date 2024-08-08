@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header.jsx'
-import PieceCard from './PieceCard.jsx'
+import PieceCard from '../cards/PieceCard.jsx'
 import styles from '../CSS/Repertoire.module.css'
 
 export default function Repertoire() {

@@ -1,0 +1,93 @@
+.card {
+    width: 879px;
+    height: auto; /* Hacer que la altura sea automática para ajustarse al contenido */
+    border-radius: 10px;
+    background: #D9D9D9;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.pieceName {
+    color: #000;    
+    font-family: Inter;
+    font-size: 25px;
+}
+
+.subtitles {
+    color: #000;
+    font-family: Inter;
+    font-size: 20px;
+}
+
+.input1 {
+    width: 544.039px;
+    height: 41px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.input2 {
+    width: 615px;
+    height: 34.439px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.option {
+    width: 200px;
+    height: 35px;
+    border-radius: 10px;
+    background: #FFF;
+}
+
+.addB {
+    width: 60px;
+    height: 34px;
+    border-radius: 23px;
+    background: #96FFCD;
+    font-size: 25px;
+    color: #000;
+    text-align: center;
+    margin-left: 40px;
+}
+
+.delB {
+    width: 60px;
+    height: 34px;
+    border-radius: 23px;
+    background: #FF9696;
+    margin-left: 20px;
+}
+
+.delB svg {
+    width: 25px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Distribuir elementos con espacio entre ellos */
+    align-items: center; /* Centra los elementos en el eje Y */
+    margin-bottom: 10px; /* Espacio inferior entre secciones */
+}
+
+.distributionContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Asegurar que ocupe todo el ancho disponible */
+}
+
+.musiciansList {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.musician {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 10px; /* Espacio superior entre opciones */
+}

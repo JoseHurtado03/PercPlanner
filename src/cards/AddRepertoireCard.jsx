@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import Header from '../components/Header.jsx';
-import AddRepertoireCard from '../cards/AddRepertoireCard.jsx';
-import styles from '../CSS/Admin.module.css';
+import AddPieceCard from './AddPieceCard.jsx';
+import styles from '../CSS/AddRepertoireCard.module.css';
 
 const TrashIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" width="41" height="42" viewBox="0 0 41 42" fill="none">
@@ -9,36 +8,32 @@ const TrashIcon = () => (
   </svg>
 );
 
-export default function Admin() {
-  const [showAddRepertoire, setShowAddRepertoire] = useState(false);
+export default function AddRepertoireCard() {
+  const [pieces, setPieces] = useState([<AddPieceCard key={0} />]);
 
-  const handleAddRepertoireClick = () => {
-    setShowAddRepertoire(prevState => !prevState);
+  const addPiece = () => {
+    setPieces([...pieces, <AddPieceCard key={pieces.length} />]);
+  };
+
+  const removePiece = () => {
+    if (pieces.length > 1) {
+      setPieces(pieces.slice(0, -1));
+    }
   };
 
   return (
-    <div>
-      <Header />
-      <div className={styles.container}>
-        <h1 className={styles.mainTitle}>Gestión de Administrador</h1>
-        <section className={styles.controlSection}>
-          <h3 className={styles.subtitle}>Repertorio</h3>
-          <button
-            className={styles.button}
-            style={{ backgroundColor: "#96FFCD" }}
-            onClick={handleAddRepertoireClick}
-          >
-            +
-          </button>
-          <button
-            className={styles.button}
-            style={{ backgroundColor: "#FF9696" }}
-          >
-            <TrashIcon />
-          </button>
-        </section>
-        {showAddRepertoire && <AddRepertoireCard />}
-      </div>
+    <div className={styles.card}>
+      <section className={styles.pieceContainer}>
+        {pieces.map((piece, index) => (
+          <div key={index}>{piece}</div>
+        ))}
+      </section>
+      <section>
+        <button className={styles.button} style={{ backgroundColor: "#96FFCD" }} onClick={addPiece}>+</button>
+        <button className={styles.button} style={{ backgroundColor: "#FF9696" }} onClick={removePiece}>
+          <TrashIcon />
+        </button>
+      </section>
     </div>
   );
 }

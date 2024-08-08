@@ -3,6 +3,7 @@ import LogIn from './pages/LogIn.jsx';
 import HomePage from './pages/HomePage.jsx';
 import Repertoire from './pages/Repertoire.jsx'
 import Profile from './pages/Profile.jsx'
+import Admin from './pages/Admin.jsx'
 
 export const router = createBrowserRouter([
     {
@@ -20,5 +21,9 @@ export const router = createBrowserRouter([
     {
         path: "/profile",
         element: <Profile />
+    },
+    {
+        path: "/admin",
+        element: <Admin />
     }
 ])

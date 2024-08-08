@@ -1,0 +1,44 @@
+.mainTitle{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subtitle{
+    color: #FFF;
+    font-family: Inter;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.button{
+    width: 118px;
+    height: 50px;
+    border-radius: 23px;
+    margin-right: 10px;
+    font-size: 40.663px;
+    color: #000;
+    text-align: center;
+}
+
+.button svg {
+    width: 30px; /* Ajusta el tamaño del icono según sea necesario */
+    height: 30px;
+}
+
+.controlSection {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 20px; /* Ajuste de margen para separación */
+}
