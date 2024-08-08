@@ -32,3 +32,23 @@
     flex-direction: column;
     gap: 10px; /* Espacio entre las piezas */
 }
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
+@media (min-width: 360px) and (max-width: 800px){
+    .card {
+        width: 300px;
+        margin-left: 10px;
+    }
+    
+    .button {
+        width: 85px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .button svg {
+        width: 18px; /* Ajusta el tamaño del icono según sea necesario */
+        height: 18px;
+    }
+}

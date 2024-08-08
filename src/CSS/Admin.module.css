@@ -42,3 +42,26 @@
     align-items: center;
     margin-bottom: 20px; /* Ajuste de margen para separación */
 }
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
+@media (min-width: 360px) and (max-width: 800px){
+    .mainTitle{
+        font-size: 25px;
+    }
+
+    .subtitle{
+        font-size: 20px;
+    }
+
+    .button{
+        width: 85px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .button svg {
+        width: 18px; /* Ajusta el tamaño del icono según sea necesario */
+        height: 18px;
+    }
+}

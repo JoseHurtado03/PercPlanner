@@ -63,18 +63,18 @@
 .mainImg{
     width: 50%;
     height: 729px;
-    background-image: url('/mainImg.png');
+    background-image: url('/ImgSignIn.jpg');
     background-size: cover;
 }
 
-.leftSpace{
+.rightSpace{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
-    padding-left: 7%;
-    padding-bottom: 5%;
-    
+    align-items: center; /* Centra el contenido horizontalmente */
+    padding-bottom: 3%;
+    width: 50%; /* Ajusta según el espacio que quieras que ocupe */
+    text-align: center; /* Asegura que el texto esté centrado */
 }
 
 .buttonsSpace{
@@ -105,7 +105,6 @@
     line-height: normal;
     border-radius: 10px;
     margin-top: 20px;
-    margin-left: 100px;
     padding: 10px;
 }
 
@@ -117,30 +116,33 @@
 
 /* RESPONSIVE */
 /* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
-@media (min-width: 360px) and (max-width: 800px){
-    .body{
+@media (min-width: 360px) and (max-width: 800px) {
+    .body {
         flex-direction: column;
+        align-items: center; /* Centra el contenido en el eje horizontal */
         margin-top: 80px;
     }
 
-    .leftSpace{
-        padding-left: 0;
+    .rightSpace {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        padding: 0; /* Elimina los padding para ajustar mejor */
+        align-items: center; /* Centra el contenido horizontalmente */
     }
 
-    .mainTitle{
+    .mainTitle {
         font-size: 25px;
     }
 
-    .box{
+    .box {
         width: 65%;
-        height: 210px;
+        height: auto; /* Ajusta la altura al contenido */
         margin: 0 auto;
         padding: 20px;
         margin-bottom: 30px;
         border-radius: 15px;
     }
 
-    .input{
+    .input {
         width: 95%;
         height: 40px;
         border-radius: 8px;
@@ -148,20 +150,20 @@
         margin-bottom: 10px;
     }
 
-    .button{
+    .button {
         width: 100%;
         height: 45px;
         font-size: 18px;
     }
 
-    .googleB{
+    .googleB {
         width: 80%;
         height: 45px;
         font-size: 15px;
         margin: 0 auto;
     }
 
-    .mainImg{
+    .mainImg {
         display: none;
     }
 
