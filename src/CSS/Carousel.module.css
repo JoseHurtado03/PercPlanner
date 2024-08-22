@@ -1,4 +1,13 @@
 .gallery{
-    width: 50%;
+    width: 450px;
     height: 60%;
+    margin-right: 30px;
+}
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
+@media (min-width: 360px) and (max-width: 800px){
+    .gallery {
+        width: 80%;
+    }
 }

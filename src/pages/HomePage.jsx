@@ -1,13 +1,13 @@
 import React from 'react'
 import Header from '../components/Header.jsx'
 import Carousel from '../components/Carousel.jsx';
+import Accordion from '../components/Accordion.jsx';
 import styles from '../CSS/HomePage.module.css';
-
 
 export default function HomePage() {
   return (
     <div className={styles.forma}>
-      <Header />
+      <Header/>
       <section className={styles.containerInfo}>
         <section>
           <h2 className={styles.subtitle}>Fila de Percusión</h2>
@@ -15,9 +15,14 @@ export default function HomePage() {
         </section>
         <section className={styles.mainImg} />
       </section>
-      <div className={styles.carousel}>
-        <Carousel/>
-      </div>
+      <section className={styles.photos}>
+        <div className={styles.carousel}>
+          <Carousel />
+        </div>
+        <div className={styles.accordion}>
+          <Accordion />
+        </div>
+      </section>
     </div>
-  )
+  );
 }

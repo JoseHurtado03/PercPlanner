@@ -15,6 +15,7 @@ export default function Profile() {
         			<img src='https://cdn-icons-png.flaticon.com/512/6073/6073873.png' className={styles.userImg}></img>
         			<h2>[Nombre de Usuario]</h2>
         		</section>
+				<button className={styles.button}>Editar</button>
       		</section>
       		<section className={styles.info}>
         		<h2>Correo Electrónico</h2>
@@ -23,8 +24,8 @@ export default function Profile() {
         		<input className={styles.input} placeholder="José Leonardo"></input>
         		<h2>Apellidos</h2>
         		<input className={styles.input} placeholder='Hurtado Vitora'></input>
-        		<h2>Teléfono</h2>
-        		<input className={styles.input} placeholder='[Número del Usuario]'></input>
+        		<h2>Contraseña</h2>
+        		<input className={styles.input} type='password'></input>
       		</section>
 		</section>
     </div>

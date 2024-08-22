@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.containerInfo{
+.containerInfo {
     width: 85%;
     height: 230px;
     display: flex;
@@ -27,7 +27,7 @@
     color: #dcdcdc;
     font-family: Inter;
     font-size: 20px;
-    text-align: justify; /* Justifica el texto */
+    text-align: justify;
     margin-right: 3%;
 }
 
@@ -42,6 +42,52 @@
 .carousel {
     width: 85%; /* Asegura que el carrusel no exceda el ancho máximo */
     display: flex;
+    flex-direction: row;
     justify-content: center; /* Centra el carrusel dentro del contenedor */
     margin-top: 30px; /* Espacio entre el carrusel y otros elementos */
+}
+
+.photos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+}
+
+/* RESPONSIVE */
+/* Telefono SmarthPhone Android Large ---> 360px x 800px*/ 
+@media (min-width: 360px) and (max-width: 800px) {
+    .containerInfo {
+        width: 70%;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .subtitle {
+        font-size: 20px;
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+    .mainImg {
+        width: 120px;
+        height: 120px;
+    }
+
+    .carousel {
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    
+    .accordion {
+        margin-top: 20px; /* Espacio entre el carrusel y el acordeón */
+    }
+    
+    .photos{
+        flex-direction: column;
+    }
 }
